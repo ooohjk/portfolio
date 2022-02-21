@@ -51,19 +51,19 @@ $('#project').click(function() {
     
     if (m % 2 == 0) {
         
-        $('#java, #database').css('visibility', 'visible');
+        $('#java, #database, #server').css('visibility', 'visible');
                             //  .css('opacity', '1');
         
     } else {
         
-        $('#java, #database').css('visibility', 'hidden');
+        $('#java, #database, #server').css('visibility', 'hidden');
                             //  .css('opacity', '0');
         
     }
     
 });
 
-$('#java').click(function() {
+$('#server').click(function() {
     
     $('html, body').animate({
         scrollTop: $('#section4').position().top
@@ -75,6 +75,14 @@ $('#database').click(function() {
     
     $('html, body').animate({
         scrollTop: $('#section5').position().top
+    }, 1000);
+    
+});
+
+$('#java').click(function() {
+    
+    $('html, body').animate({
+        scrollTop: $('#section6').position().top
     }, 1000);
     
 });
@@ -140,3 +148,103 @@ nextButton2.addEventListener('click', () => {
     index2 += 1; 
     carousel2.style.transform = `translate3d(-${600 * index2}px, 0, 0)`; 
 });
+
+
+const prevButton3 = document.querySelector('#sec6pr'); 
+const nextButton3 = document.querySelector('#sec6nt'); 
+const carousel3 = document.querySelector('#sec6car2');
+const img3 = document.querySelectorAll('#sec6car2 > img');
+
+let index3 = 0; 
+
+prevButton3.addEventListener('click', () => { 
+    if (index3 === 0) return; 
+    index3 -= 1; 
+    carousel3.style.transform = `translate3d(-${600 * index3}px, 0, 0)`; 
+}); 
+
+nextButton3.addEventListener('click', () => { 
+    if (index3 === img3.length-1) return; 
+    index3 += 1; 
+    carousel3.style.transform = `translate3d(-${600 * index3}px, 0, 0)`; 
+});
+
+
+$('#sec6Div3').mouseover(() => {
+
+    $('#sec6Div3 div').css('transform', 'translate(0px, -120px)')
+                      .css('transition', 'all 1s');
+
+});
+
+$('#sec6Div3').mouseout(() => {
+
+    $('#sec6Div3 div').css('transform', 'translate(0px, 0px)')
+                      .css('transition', 'all 1s');
+
+});
+
+$('#sec5Div3').mouseover(() => {
+
+    $('#sec5Div3 div').css('transform', 'translate(0px, -280px)')
+                      .css('transition', 'all 2s');
+
+});
+
+$('#sec5Div3').mouseout(() => {
+
+    $('#sec5Div3 div').css('transform', 'translate(0px, 0px)')
+                      .css('transition', 'all 2s');
+
+});
+
+$('#sec4Div3').mouseover(() => {
+
+    $('#sec4Div3 div').css('transform', 'translate(0px, -30px)')
+                      .css('transition', 'all 1s');
+
+});
+
+$('#sec4Div3').mouseout(() => {
+
+    $('#sec4Div3 div').css('transform', 'translate(0px, 0px)')
+                      .css('transition', 'all 1s');
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

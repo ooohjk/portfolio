@@ -63,7 +63,7 @@ html, body {
     font-variant: small-caps;
 }
 
-#header1 #nav1 #java, #header1 #nav1 #database {
+#header1 #nav1 #java, #header1 #nav1 #database, #header1 #nav1 #server {
     visibility: hidden;
     /* opacity: 0; */
     font-size: 1.3em;
@@ -106,27 +106,60 @@ html, body {
 
 #title {
     /* border: 1px solid black; */
-    width: 700px;
+    width: 1000px;
     text-align: center;
     position: absolute;
-    top: 130px;
-    left: 550px;
-    font-size: 3.2em;
+    top: 360px;
+    left: 400px;
+    font-size: 2em;
     font-weight: bold;
+    font-family: 'CookieRun-Regular';
 }
 
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#jk {
+    animation: jk;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jk {
+    0% { color: black; }
+    50% { color: green; }
+    100% { color: gold; }
+}
+
+/*
 #txt1 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 1000px;
     height: 300px;
-    font-size: 2.3em;
+    font-size: 1.2em;
     font-weight: bold;
-    text-align: justify;
+    font-family: 'GmarketSansMedium';
+    text-align: left;
     position: relative;
     top: 300px;
     left: 400px;
-    /* margin: 0 auto; */
-    /* transition: all 1s; */
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 3px 3px 0px #BBB;
+    margin: 0 auto;
+    transition: all 1s;
+}
+*/
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .arrow {
@@ -191,7 +224,7 @@ html, body {
     top: 15%;
     left: 20%; */
     margin: 0px auto;
-    background-image: url(./images/rozar.jpg);
+    background-image: url(./images/20220219오재경.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -247,8 +280,16 @@ html, body {
     position: absolute;
     left: 850px;
     top: 120px;
-    padding: 30px;
+    padding: 50px;
+    font-family: 'GmarketSansMedium';
+    font-size: 1.9em;
+    /* text-align: center; */
 }
+
+/* #txt3 > span {
+    font-weight: bold;
+    font-size: 1.1em;
+} */
 
 #section3 {
     background-color: #e9f5db;
@@ -327,7 +368,7 @@ html, body {
     /* border: 1px solid red; */
     border-radius: 10px;
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: white;
     position: relative;
     left: 740px;
@@ -354,14 +395,18 @@ html, body {
 
 #section3 #end #javaImg {
     /* border: 1px solid black; */
-    width: 200px;
+    width: 150px;
     margin-top: 30px;
     margin-bottom: 0;
 }
 
 #section3 #end #oracleImg {
     /* border: 1px solid black; */
-    width: 300px;
+    width: 160px;
+}
+
+#section3 #end #jspImg {
+    width: 140px;
 }
 
 #section3 #tools {
@@ -372,7 +417,7 @@ html, body {
     background-color: white;
     position: relative;
     left: 1300px;
-    top: -730px;
+    top: -830px;
     text-align: center;
     font-size: 2em;
     font-family: ImcreSoojin;
@@ -383,19 +428,28 @@ html, body {
 }
 
 #section3 #tools #eclImg {
-    height: 150px;
+    height: 100px;
     margin-top: 15px;
 }
 
 #section3 #tools #delvImg {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     margin-top: 10px;
 }
 
 #section3 #tools #vsImg {
-    width: 120px;
+    /* border: 1px solid black; */
+    width: 100px;
     margin-top: 10px;
+}
+
+#section3 #tools #springImg {
+    /* border: 1px solid black; */
+    width: 120px;
+    display: block;
+    position: relative;
+    left: 90px;
 }
 
 #section4 {
@@ -435,12 +489,10 @@ html, body {
     overflow: hidden;
 }
 
-#sec4car1 { 
-    /* border: 1px solid red; */
+/* #sec4car1 { 
     width: 1800px; 
     height: 500px; 
-    /* overflow: hidden;  */
-} 
+}  */
 
 #sec4car1 > #sec4car2 { 
     /* border: 1px solid green; */
@@ -449,8 +501,7 @@ html, body {
     transition: transform 0.4s; 
 }
 
-#sec4car2 > img { 
-    /* border: 1px solid black; */
+#sec4car2 > img {
     width: 800px;
     height: 500px; 
 }
@@ -498,12 +549,15 @@ html, body {
     border-radius: 10px;
     width: 740px;
     height: 540px;
-    padding: 30px;
+    padding: 20px;
     position: relative;
     left: 900px;
     top: -460px;
     background-color: white;
     box-shadow: 10px 10px 10px #CCC;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
 }
 
 #section5 {
@@ -542,12 +596,10 @@ html, body {
     overflow: hidden;
 }
 
-#sec5car1 { 
-    /* border: 1px solid red; */
-    width: 3000px; 
+/* #sec5car1 { 
+    width: 10200px; 
     height: 500px; 
-    /* overflow: hidden;  */
-} 
+}  */
 
 #sec5car1 > #sec5car2 { 
     /* border: 1px solid green; */
@@ -557,7 +609,6 @@ html, body {
 }
 
 #sec5car2 > img { 
-    /* border: 1px solid black; */
     width: 800px;
     height: 500px; 
 }
@@ -568,9 +619,132 @@ html, body {
     width: 740px;
     height: 540px;
     padding: 30px;
+    padding-top: 10px;
     position: relative;
     left: 900px;
     top: -460px;
     background-color: white;
     box-shadow: 10px 10px 10px #CCC;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
 }
+
+#section6 {
+    background-color: cornsilk;
+}
+
+#sec6Proj {
+    font-size: 4em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#sec6Proj small {
+    font-size: .5em;
+    color: gray;
+}
+
+#sec6Div1 {
+    /* border: 1px solid black; */
+    width: 1800px;
+    height: 850px;
+    position: absolute;
+    left: 55px;
+    top: 25px;
+}
+
+#sec6Div2 {
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 160px;
+    top: 80px;
+    overflow: hidden;
+}
+
+/* #sec6car1 { 
+    width: 1800px; 
+    height: 500px; 
+}  */
+
+#sec6car1 > #sec6car2 { 
+    /* border: 1px solid green; */
+    display: flex; 
+    transform: translate3d(0, 0, 0); 
+    transition: transform 0.4s; 
+}
+
+#sec6car2 > img { 
+    /* border: 1px solid black; */
+    width: 800px;
+    height: 500px; 
+}
+
+#sec6Div3 {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 740px;
+    height: 540px;
+    padding: 30px;
+    padding-top: 10px;
+    position: relative;
+    left: 900px;
+    top: -460px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #CCC;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* #sec6Div3:hover div {
+    transform: translate(0px, -120px);
+    transition: all 1s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
