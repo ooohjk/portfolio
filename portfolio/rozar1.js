@@ -1,3 +1,4 @@
+
 window.addEventListener("wheel", function(e){
     e.preventDefault();
 },{passive : false});
@@ -33,5 +34,6 @@ $(window).on("wheel", function(e) {
     // console.log(1);
     
 })
+
 
 
