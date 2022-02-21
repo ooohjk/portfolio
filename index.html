@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK's portfolio</title>
+    <script src="./jquery/js/jquery-1.12.4.js"></script>
+    <script src="./portfolio/rozar1.js"></script>
+    <link rel="stylesheet" href="./portfolio/rozar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <!-- rozar.html -->
+    
+    <header id="header1">
+        <nav id="nav1">
+            <div id="home" class="menu" data-sections="section1">Home</div>
+            <div id="profile" class="menu" data-sections="section2">Profile</div>
+            <div id="skill" class="menu" data-sections="section3">Skill</div>
+            <div id="project" class="menu" data-sections="section4">Project</div>
+            <div id="server" class="menu" data-sections="section5">Server</div>
+            <div id="database" class="menu" data-sections="section6">DataBase</div>
+            <div id="java" class="menu" data-sections="section7">Java</div>
+        </nav>
+    </header>
+
+    <div id="bars"><i class="fas fa-bars"></i></div>
+    
+    <!-- Home -->
+    <section class="section" id="section1">
+        <div id="sec1Div1">
+            <div id="sec1Div2">Home</div>
+            <div id="title">
+                신입 개발자 <span id="jk">오재경</span>의 포트폴리오 입니다!
+            </div>
+            <div id="txt1">
+                
+            </div>
+            <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile -->
+    <section class="section" id="section2">
+        <div id="sec2Div1">
+            <div id="sec2Profile">Profile</div>
+            <div id="sec2Div2">
+                <div id="img1"></div>
+                <div id="txt2">
+                    <div>
+                        <i class="fas fa-user"></i><span id="name">Name : 오재경</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-calendar"></i><span id="birth">Birth : 1995/12/04</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-university"></i><span id="college">College : 수원대학교 수학과</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-alt"></i><span id="tel">Tel : 010-7646-1612</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i><span id="email">Email : reader_1@naver.com</span>
+                    </div>
+                </div>
+            </div>
+            <div id="txt3">
+                안녕하십니까. 저는 신입 개발자 <b>오재경</b>이라고 합니다.<br>
+                제가 생각하는 개발자는 알고리즘이 전부라고 생각합니다. 저의 전공은 수학이였기에 코딩 실력은 부족할지라도 알고리즘에 관한 이해능력은 뛰어나다고 생각합니다. 그리고 제가 좋아하는 웹툰 중 <b>'분명 다 포기하고 멈춰서 쉬고 싶을 때가 올거야. 그 때가 가장 중요해. 상어는 부레가 없어서 잠깐이라도 헤엄을 치지 않으면 가라앉아서 죽어. 그래서 태어나서 끊임없이 움직여야 돼'</b> 라는 대사가 나오는 웹툰이 있습니다. 상어처럼 끊임없이 움직이는, 앞으로 나아가는 개발자가 되겠습니다!
+            </div>
+            <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="section" id="section3">
+        <div id="sec3Div1">Skills</div>
+        <div id="sec3Div2">
+            <div id="front">
+                Front-End
+                <hr>
+                <img src="./portfolio/images/front-end.png" id="frontImg">
+                <img src="./portfolio/images/jquery.png" id="jQueryImg">
+            </div>
+            <div id="end">
+                Back-End
+                <hr>
+                <div id="endDiv1">
+                    <!-- <img src="../portfolio/images/java.png" id="javaImg"> -->
+                </div>
+                <img src="./portfolio/images/oracle.png" id="oracleImg">
+                <img src="./portfolio/images/jsp.png" id="jspImg">
+            </div>
+            <div id="tools">
+                Tools
+                <hr>
+                <img src="./portfolio/images/eclipse.jpg" id="eclImg">
+                <img src="./portfolio/images/developer.png" id="delvImg">
+                <img src="./portfolio/images/vscode.png" id="vsImg">
+                <img src="./portfolio/images/spring.png" id="springImg">
+            </div>
+            <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Server -->
+    <section class="section" id="section4">
+        <div id="sec4Div1">
+            <div id="sec4Proj">Project <small>Server(Web)</small></div>
+            <!-- 프로젝트 슬라이드 -->
+            <div id="sec4Div2">
+                <div id="sec4car1" class="carousel-wrapper"> 
+                    <div id="sec4car2" class="carousel">
+                        <img src="./portfolio/images/web project/1.ERD.png" alt="">
+                        <img src="./portfolio/images/web project/2.회원목록sql.png" alt="">
+                        <img src="./portfolio/images/web project/3.맛집목록sql.png" alt="">
+                        <img src="./portfolio/images/web project/4.공지사항목록sql.png" alt="">
+                        <img src="./portfolio/images/web project/5.뷰1.png" alt="">
+                        <img src="./portfolio/images/web project/6.뷰2.png" alt="">
+                        <img src="./portfolio/images/web project/7.회원가입.png" alt="">
+                        <img src="./portfolio/images/web project/8.로그인.png" alt="">
+                        <img src="./portfolio/images/web project/9.개인정보조회.png" alt="">
+                        <img src="./portfolio/images/web project/10.개인정보수정.png" alt="">
+                        <img src="./portfolio/images/web project/11.예약정보.png" alt="">
+                        <img src="./portfolio/images/web project/12.즐겨찾기.png" alt="">
+                        <img src="./portfolio/images/web project/13.회원탈퇴.png" alt="">
+                        <img src="./portfolio/images/web project/14.메인페이지.png" alt="">
+                        <img src="./portfolio/images/web project/15.메인페이지 검색.png" alt="">
+                        <img src="./portfolio/images/web project/16.지역별검색.png" alt="">
+                        <img src="./portfolio/images/web project/17.지역별검색 세부.png" alt="">
+                        <img src="./portfolio/images/web project/18.메뉴별검색.png" alt="">
+                        <img src="./portfolio/images/web project/19.메뉴별검색 세부.png" alt="">
+                        <img src="./portfolio/images/web project/20.공지사항.png" alt="">
+                        <img src="./portfolio/images/web project/21.Q&A.png" alt="">
+                        <img src="./portfolio/images/web project/22.자유게시판.png" alt="">
+                        <img src="./portfolio/images/web project/23.자유게시판 세부.png" alt="">
+                        <img src="./portfolio/images/web project/24.관리자메인페이지.png" alt="">
+                        <img src="./portfolio/images/web project/25.뉴스게시판.png" alt="">
+                        <img src="./portfolio/images/web project/26.뉴스게시판 세부.png" alt="">
+                        <img src="./portfolio/images/web project/27.회원관리.png" alt="">
+                        <img src="./portfolio/images/web project/28.점포관리.png" alt="">
+                        <img src="./portfolio/images/web project/29.고객센터.png" alt="">
+                        <img src="./portfolio/images/web project/30.고객센터 세부.png" alt="">
+                    </div> 
+                </div> 
+            </div>
+            <div id="sec4pr" class="prev"><i class="fas fa-chevron-left"></i></div>
+            <div id="sec4nt" class="next"><i class="fas fa-chevron-right"></i></div>
+            <!-- 프로젝트 설명 -->
+            <div id="sec4Div3">
+                <div>
+                <p>제작 인원 : 6명 (오재경, 송성현, 김성연, 윤한빈, 이채윤, 차세라)</p>
+                <p>제작 기간 : 2022.01.04 ~ 2022.01.28 (하루 평균 4시간)</p>
+                <p>주제 : 맛집이 필요한 사람, 점심메뉴를 고르지 못한 사람, 처음 온 지역에서 맛집을 찾고 싶은 사람들을 위한 웹사이트</p>
+                <p>
+                    관리자 : <ul>
+                        <li>회원관리 : 회원 상세보기 및 회원 삭제</li>
+                        <li>점포관리 : 신청 점포 확인 및 승인</li>
+                        <li>맛집기사 : 맛집 관련 기사 작성</li>
+                        <li>고객센터 : 고객 질문 열람 및 답변</li>
+                        <li>공지사항 : 관리자만 작성 가능</li>
+                    </ul>
+                    회원 및 비회원 : <ul>
+                        <li>통합 검색 : 검색한 단어를 포함하는 공지사항, 자유게시판, 맛집 들을 출력</li>
+                        <li>지역별 검색 : 원하는 지역 선택시 해당 지역의 맛집 출력</li>
+                        <li>메뉴(카테고리)별 검색 : 원하는 메뉴(카테고리) 선택시 해당 메뉴 관련 맛집 출력</li>
+                        <li>자유 게시판 : 비회원은 읽기만 가능, 회원들은 로그인 후 새 글 작성 가능</li>
+                        <li>공지사항 : 회원, 비회원 모두 읽기만 가능</li>
+                        <li>Q&A 게시판 : 회원들만 작성 가능</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project DB -->
+    <section class="section" id="section5">
+        <div id="sec5Div1">
+            <div id="sec5Proj">Project <small>DataBase</small></div>
+            <!-- 프로젝트 슬라이드 -->
+            <div id="sec5Div2">
+                <div id="sec5car1" class="carousel-wrapper"> 
+                    <div id="sec5car2" class="carousel">
+                        <img src="./portfolio/images/쿼리 요구사항/관리자-교사계정관리.png" alt=""> 
+                        <img src="./portfolio/images/쿼리 요구사항/관리자-기초정보관리.png" alt=""> 
+                        <img src="./portfolio/images/쿼리 요구사항/관리자-출결관리및출결조회.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/교사기초정보1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/교사기초정보2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/기간별 출결 현황 조회1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/기간별 출결 현황 조회2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/기초정보1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/기초정보2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정 과정 선택시 출결 현황1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정 과정 선택시 출결 현황2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정 인원 선택시 출결 현황1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정 인원 선택시 출결 현황2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정개설과정선택시 출결조회1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정개설과정선택시 출결조회2.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정교사선택시1.png" alt="">
+                        <img src="./portfolio/images/쿼리 요구사항/특정교사선택시2.png" alt="">
+                    </div> 
+                </div> 
+            </div>
+            <div id="sec5pr" class="prev"><i class="fas fa-chevron-left"></i></div>
+            <div id="sec5nt" class="next"><i class="fas fa-chevron-right"></i></div>
+            <!-- 프로젝트 설명 -->
+            <div id="sec5Div3">
+                <div>
+                <p>제작 인원 : 6명 (오재경, 김재형, 차세라, 이찬우, 김기현, 김혜림)</p>
+                <p>제작 기간 : 2021.11.22 ~ 2021.12.07 (하루 평균 4시간)</p>
+                <p>주제 : 쌍용교육센터 관리시스템</p>
+                <p>
+                    관리자 : <ul>
+                        <li>기초 정보 관리</li>
+                        <li>계정 관리</li>
+                        <li>개설 과정 / 과목 관리</li>
+                        <li>출결 관리 및 조회</li>
+                    </ul>
+                    교사 : <ul>
+                        <li>배점 과목정보 관리</li>
+                        <li>강의 스케줄 조회</li>
+                        <li>성적 입출력</li>
+                        <li>출결 조회</li>
+                    </ul>
+                    교육생 : <ul>
+                        <li>성적 확인 및 조회</li>
+                        <li>출결 조회</li>
+                        <li>계정 조회</li>
+                        <li>시험 정보 조회</li>
+                    </ul>
+                    추가 업무 : <ul>
+                        <li>취업자 관리</li>
+                        <li>교재 수령 여부</li>
+                        <li>수강 과목 평가</li>
+                        <li>신청자 관리</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Java -->
+    <section class="section" id="section6">
+        <div id="sec6Div1">
+            <div id="sec6Proj">Project <small>Java</small></div>
+            <!-- 프로젝트 슬라이드 -->
+            <div id="sec6Div2">
+                <div id="sec6car1" class="carousel-wrapper">
+                    <div id="sec6car2" class="carousel">
+                        <!-- 비회원 -->
+                        <img src="./portfolio/images/비회원.png">
+                        <img src="./portfolio/images/콘솔/비회원/1. 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-1. 로그인 비밀번호 틀렸을 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-1. 로그인 성공시.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-1. 로그인 아이디 비밀번호 둘 다 틀렸을 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-1. 로그인 아이디 틀렸을 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-2 회원가입.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-2. 회원가입(베지테리언).png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-2. 회원가입(주소).png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-3. 계정 찾기.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-4. 로그인 화면에서 이전 화면으로.png" alt="">
+                        <img src="./portfolio/images/콘솔/비회원/1-5. 회원가입 형식 틀렸을 때.jpeg" alt="">
+
+                        <!-- 회원 -->
+                        <img src="./portfolio/images/회원.png">
+                        <img src="./portfolio/images/콘솔/회원/2. 회원 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-1. 상품 검색 버튼 기능.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-1. 상품 검색 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 상품 검색(카테고리별 검색).png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니 계속 입력 시 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니 담아 놓은 상품 구매 안할 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니 버튼 기능.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니 출력 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-2. 장바구니에 담을 상품 검색 시.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-3. 장바구니 결제 배송비 포함.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-3. 장바구니 결제 픽업.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-3. 장바구니 결제.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4. 회원 개인정보 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4-1. 회원 개인정보 조회 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4-2. 회원 개인정보 수정 화면1.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4-2. 회원 개인정보 수정 화면2.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4-2. 회원 개인정보 수정 화면3.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4-3. 회원 개인정보 탈퇴 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-4. 회원 개인정보 수정 후 조회 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-5. 결제 내역 조회 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-5. 결제 내역 조회 지난 구매 내역 없는 경우.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-5. 결제 내역 조회 지난 구매 내역 있는 경우.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-5. 결제 내역 조회 최근 구매 내역 없는 경우.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-5. 결제 내역 조회 최근 구매 내역 있는 경우.png" alt="">
+                        <img src="./portfolio/images/콘솔/회원/2-6. 회원 로그아웃.png" alt="">
+
+                        <!-- 관리자 -->
+                        <img src="./portfolio/images/관리자.png">
+                        <img src="./portfolio/images/콘솔/관리자/3. 관리자 초기화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-1. 회원정보 조회.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 등록 화면1.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 등록 화면2.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 등록 화면3.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 삭제 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 수정 화면1.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 수정 화면2.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품 수정 화면3.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품등록 초기화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-2. 상품등록(상품명 같을경우).png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-3. 매출 관리 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-3. 매출 관리 총 매출 내역.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-3. 매출 관리 카드 매출 내역.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-3. 매출 관리 현금 매출 내역.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-4. 재고 관리 상품 입고 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-4. 재고 관리 상품 재고 조회 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-4. 재고 관리 초기 화면.png" alt="">
+                        <img src="./portfolio/images/콘솔/관리자/3-5. 관리자 로그아웃.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="sec6pr" class="prev"><i class="fas fa-chevron-left"></i></div>
+            <div id="sec6nt" class="next"><i class="fas fa-chevron-right"></i></div>
+            <!-- 프로젝트 설명 -->
+            <div id="sec6Div3">
+                <div>
+                <p>제작 인원 : 6명 (오재경, 김규석, 주하성, 심연경, 이정현, 함규상)</p>
+                <p>제작 기간 : 2021.10.21 ~ 2021.11.05 (하루 평균 4시간)</p>
+                <p>주제 : 온라인 마트 판매 및 재고의 통합관리 솔루션 시스템</p>
+                <p>
+                    비회원 : <ul>
+                        <li>계정찾기: 이름과 전화번호를 통해 계정을 찾을 수 있다.</li>
+                        <li>회원가입: 몇가지 인적사항을 입력해 가입을 할 수 있다.</li>
+                        <li>로그인: 회원가입을 통해 저장된 개인정보로 시스템에 접근한다.<br>&emsp;&emsp;&emsp;&ensp;회원용 / 관리자용으로 나뉜다.</li>
+                    </ul>
+                    회원 : <ul>
+                        <li>상품 검색: 초성이나 대체어로도 검색이 가능</li>
+                        <li>장바구니 담기: 결제 전 장바구니 담기 기능 제공</li>
+                        <li>상품 결제: 카드 / 현금 과 배송 옵션을 제공</li>
+                        <li>결제 내역 조회: 최근 구매한 내역과 지난 내역 제공</li>
+                        <li>개인 정보 조회: 회원가입 / 수정 한 회원 정보 제공</li>
+                    </ul>
+                    관리자 : <ul>
+                        <li>회원 정보 조회: 회원가입 한 모든 회원의 정보 제공</li>
+                        <li>상품 관리: 새로운 상품을 등록, 수정</li>
+                        <li>매출 관리: 현금 매출과 카드 매출을 나누어 확인</li>
+                        <li>재고 관리: 기존 물품의 수량 입고 시 수정</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+            <!-- <div class="arrow">
+                <i class="fas fa-angle-double-down"></i>
+            </div> -->
+        </div>
+    </section>
+
+
+    <script src="./portfolio/rozar2.js"></script>
+    
+</body>
+</html>
