@@ -64,7 +64,7 @@ html, body {
     font-variant: small-caps;
 }
 
-#header1 #nav1 #java, #header1 #nav1 #database, #header1 #nav1 #server {
+#header1 #nav1 #java, #header1 #nav1 #database, #header1 #nav1 #server, #header1 #nav1 #board {
     visibility: hidden;
     /* opacity: 0; */
     font-size: 1.3em;
@@ -701,3 +701,118 @@ html, body {
     font-weight: bold;
     overflow: hidden;
 }
+
+
+#section7 {
+    background-color: rgb(220, 255, 228);
+}
+
+#sec7Proj {
+    font-size: 4em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#sec7Proj small {
+    font-size: .5em;
+    color: gray;
+}
+
+#sec7Div1 {
+    /* border: 1px solid black; */
+    width: 1800px;
+    height: 850px;
+    position: absolute;
+    left: 55px;
+    top: 25px;
+}
+
+#sec7Div2 {
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 160px;
+    top: 80px;
+    overflow: hidden;
+}
+
+/* #sec6car1 { 
+    width: 1800px; 
+    height: 500px; 
+}  */
+
+#sec7car1 > #sec7car2 { 
+    /* border: 1px solid green; */
+    display: flex; 
+    transform: translate3d(0, 0, 0); 
+    transition: transform 0.4s; 
+}
+
+#sec7car2 > img { 
+    /* border: 1px solid black; */
+    width: 800px;
+    height: 500px; 
+}
+
+#sec7Div3 {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 740px;
+    height: 540px;
+    padding: 30px;
+    padding-top: 10px;
+    position: relative;
+    left: 900px;
+    top: -460px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #CCC;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
