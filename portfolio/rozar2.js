@@ -52,15 +52,23 @@ $('#project').click(function() {
     
     if (m % 2 == 0) {
         
-        $('#java, #database, #server').css('visibility', 'visible');
+        $('#java, #database, #server, #board').css('visibility', 'visible');
                             //  .css('opacity', '1');
         
     } else {
         
-        $('#java, #database, #server').css('visibility', 'hidden');
+        $('#java, #database, #server, #board').css('visibility', 'hidden');
                             //  .css('opacity', '0');
         
     }
+    
+});
+
+$('#board').click(function() {
+    
+    $('html, body').animate({
+        scrollTop: $('#section7').position().top
+    }, 1000);
     
 });
 
@@ -171,9 +179,31 @@ nextButton3.addEventListener('click', () => {
 });
 
 
+
+const prevButton4 = document.querySelector('#sec7pr'); 
+const nextButton4 = document.querySelector('#sec7nt'); 
+const carousel4 = document.querySelector('#sec7car2');
+const img4 = document.querySelectorAll('#sec7car2 > img');
+
+let index4 = 0; 
+
+prevButton4.addEventListener('click', () => { 
+    if (index4 === 0) return; 
+    index4 -= 1; 
+    carousel4.style.transform = `translate3d(-${600 * index4}px, 0, 0)`; 
+}); 
+
+nextButton4.addEventListener('click', () => { 
+    if (index4 === img4.length-1) return; 
+    index4 += 1; 
+    carousel4.style.transform = `translate3d(-${600 * index4}px, 0, 0)`; 
+});
+
+
+
 $('#sec6Div3').mouseover(() => {
 
-    $('#sec6Div3 div').css('transform', 'translate(0px, -120px)')
+    $('#sec6Div3 div').css('transform', 'translate(0px, -180px)')
                       .css('transition', 'all 1s');
 
 });
@@ -187,7 +217,7 @@ $('#sec6Div3').mouseout(() => {
 
 $('#sec5Div3').mouseover(() => {
 
-    $('#sec5Div3 div').css('transform', 'translate(0px, -280px)')
+    $('#sec5Div3 div').css('transform', 'translate(0px, -310px)')
                       .css('transition', 'all 2s');
 
 });
@@ -201,7 +231,7 @@ $('#sec5Div3').mouseout(() => {
 
 $('#sec4Div3').mouseover(() => {
 
-    $('#sec4Div3 div').css('transform', 'translate(0px, -30px)')
+    $('#sec4Div3 div').css('transform', 'translate(0px, -100px)')
                       .css('transition', 'all 1s');
 
 });
@@ -212,4 +242,20 @@ $('#sec4Div3').mouseout(() => {
                       .css('transition', 'all 1s');
 
 });
+
+
+$('#sec7Div3').mouseover(() => {
+
+    $('#sec7Div3 div').css('transform', 'translate(0px, -100px)')
+                      .css('transition', 'all 1s');
+
+});
+
+$('#sec7Div3').mouseout(() => {
+
+    $('#sec7Div3 div').css('transform', 'translate(0px, 0px)')
+                      .css('transition', 'all 1s');
+
+});
+
 

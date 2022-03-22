@@ -16,7 +16,7 @@ $(window).on("wheel", function(e) {
     // if($('html, body').is(":animated")) return;
     
     if(e.originalEvent.deltaY > 0) {
-        if(page == 6) return;
+        if(page == 7) return;
         page++;
     } else if(e.originalEvent.deltaY < 0) {
         if(page == 1) return;
